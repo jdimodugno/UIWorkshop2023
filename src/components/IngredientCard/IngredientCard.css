@@ -1,0 +1,18 @@
+.IngredientCard {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 8px;
+}
+
+.IngredientCard .card-content {
+  padding: 0;
+}
+
+.removeButton {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
