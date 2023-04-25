@@ -48,7 +48,7 @@ const IngredientForm = ({ data, onSubmit, onClear }: IngredientFormProps) => {
         <Form.Field>
           <Form.Control>
             <Form.Label>Unit</Form.Label>
-            <Form.Input placeholder="Price (in Dollars)" name="price" value={formData.price} onChange={handleDataChange} />
+            <Form.Input placeholder="Price (in Dollars)" type='number' name="price" value={formData.price} onChange={handleDataChange} />
           </Form.Control>
         </Form.Field>
         <Button.Group align='right'>
