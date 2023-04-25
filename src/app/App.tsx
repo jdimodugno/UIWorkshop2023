@@ -7,7 +7,7 @@ import useIngredients from '../hooks/useIngredients';
 import IngredientCard from '../components/IngredientCard/IngredientCard';
 import { IngredientDTO, IngredientEntity } from '../types/ingredient';
 import { Block, Box, Columns, Content, Heading, Modal } from 'react-bulma-components';
-import CustomNavbar from '../components/CustomNavbar/CustomNavbar';
+import CustomNavbar from '../components/Navbar/CustomNavbar';
 
 const App = () => {
   const [ingredients, setIngredients] = useState<IngredientEntity[]>([]);
@@ -86,7 +86,13 @@ const App = () => {
           </Columns>
         </Box>
 
-        <Modal show={modalOpen} showClose onClose={() => setModalOpen(false)}>
+        <Modal
+          showClose
+          closeOnEsc
+          closeOnBlur
+          show={modalOpen}
+          onClose={() => setModalOpen(false)}
+        >
           <Modal.Content>
             {renderForm}
           </Modal.Content>

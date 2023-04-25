@@ -51,9 +51,9 @@ const IngredientForm = ({ data, onSubmit, onClear }: IngredientFormProps) => {
             <Form.Input placeholder="Price (in Dollars)" name="price" value={formData.price} onChange={handleDataChange} />
           </Form.Control>
         </Form.Field>
-        <Button.Group>
-          <Button rounded color="secondary" onClick={handleClear} disabled={isClearDisabled}>Clear</Button>
-          <Button rounded color="primary" onClick={handleSubmit} disabled={isSubmitDisabled}>Submit</Button>
+        <Button.Group align='right'>
+          <Button color="secondary" onClick={handleClear} disabled={isClearDisabled}>Clear</Button>
+          <Button color="primary" onClick={handleSubmit} disabled={isSubmitDisabled}>Submit</Button>
         </Button.Group>
       </Card.Content>
     </Card>
